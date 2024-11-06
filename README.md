@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Respect</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #00509e;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #d9534f;
-            font-size: 1.8em;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-    </style>
+
 </head>
 <body>
     <h1>Connect with Respect</h1>
