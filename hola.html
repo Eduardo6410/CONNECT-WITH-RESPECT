@@ -5,39 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Respect</title>
-</head>
-body {
-  background-image: url("img_tree.gif"), url("paper.gif");
-  background-color: #cccccc;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Fondo de la página */
+        body {
+            background-image: url("img_tree.gif"), url("paper.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilos para el menú de navegación */
+        nav {
+            background-color: #003366;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        /* Secciones */
+        section {
+            padding: 30px;
+            margin: 20px 10%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Imagenes */
+        .img-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .img-banner:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
     <header>
         <h1>Connect with Respect</h1>
     </header>
+
     <nav>
-    <ul>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#cyberbullying">What is Cyberbullying?</a></li>
-        <li><a href="#joinus">How to Join Us</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#cyberbullying">What is Cyberbullying?</a></li>
+            <li><a href="#joinus">How to Join Us</a></li>
+        </ul>
+    </nav>
 
-<section id="aboutus">
-    <h2>About Us</h2>
-    <p>.Connect with respect is an organization that helps people who are suffering from cyberbullying. In addition to helping, it gives them the opportunity to vent and tell their experience anonymously, although it may not seem important, many of suicide rates related to cyberbullying increased by 7.6% from 2021 to 2022, underscoring the urgent need for action, that is why Eduardo Alvarado Treviño, Jorge Zazueta Soto, Matias Lasprilla and Lucas Ramos try to avoid</p>
-</section>
+    <section id="aboutus">
+        <h2>About Us</h2>
+        <img class="img-banner" src="about_us_image.jpg" alt="Connect with Respect">
+        <p>Connect with Respect is an organization dedicated to helping those who are affected by cyberbullying. We provide a safe, anonymous space for victims to share their stories, find support, and get guidance on how to deal with their experiences. Cyberbullying is a serious issue that has seen an alarming increase in recent years, particularly among teens and young adults. In 2022, suicide rates related to cyberbullying rose by 7.6%, emphasizing the critical need for preventative measures and awareness.</p>
+    </section>
 
-<section id="cyberbullying">
-    <h2>What is Cyberbullying?</h2>
-    <p>Cyberbullying is a form of bullying that occurs through digital platforms such as social media, text messaging, or online gaming. It involves using technology to harass, threaten, embarrass, or target individuals or groups. This type of bullying can manifest in various ways, including sending abusive messages, impersonating someone to harm their reputation, sharing private information without consent, excluding someone from online discussions, and publicly shaming victims by sharing humiliating content.
+    <section id="cyberbullying">
+        <h2>What is Cyberbullying?</h2>
+        <img class="img-banner" src="cyberbullying_image.jpg" alt="Cyberbullying Concept">
+        <p>Cyberbullying refers to bullying that takes place over digital platforms such as social media, text messages, online forums, and gaming. It includes spreading false rumors, sending threatening or abusive messages, impersonating someone to damage their reputation, or publicly shaming individuals online.</p>
+        <p>The impact of cyberbullying can be devastating. Victims may experience depression, anxiety, feelings of isolation, and in severe cases, suicidal thoughts. It's crucial to educate ourselves and others about how to identify and address cyberbullying. Here are some key signs of cyberbullying:</p>
+        <ul>
+            <li>Frequent withdrawal from online interactions.</li>
+            <li>Unexplained injuries or stress related to online activities.</li>
+            <li>Sudden decline in self-esteem or mood changes.</li>
+            <li>Being reluctant to go to school or other social events.</li>
+        </ul>
+        <p>It's important to intervene as soon as you recognize the signs of cyberbullying. Speak to trusted individuals, block the bully, and report the issue to authorities when necessary.</p>
+    </section>
 
-The effects of cyberbullying can be severe, leading to anxiety, depression, and, in some cases, suicidal thoughts. Victims often experience feelings of isolation and powerlessness, exacerbating mental health issues. Studies indicate a significant link between cyberbullying and adverse psychological outcomes, highlighting the importance of awareness and proactive measures to combat this growing issue. .</p>
-</section>
+    <section id="joinus">
+        <h2>How to Join Us</h2>
+        <img class="img-banner" src="join_us_image.jpg" alt="Join Connect with Respect">
+        <p>If you or someone you know is experiencing cyberbullying, don't hesitate to reach out. We offer a safe environment to talk about your experiences, and we are here to provide support. You can contact us through:</p>
+        <ul>
+            <li>Phone: +52 6672085494</li>
+            <li>Email: <a href="mailto:connectwithrespect101@gmail.com">connectwithrespect101@gmail.com</a></li>
+        </ul>
+        <p>If you'd like to be part of our cause, you can join our volunteer team, help us raise awareness, or donate to our organization. Together, we can create a safer online environment for everyone.</p>
+    </section>
 
-<section id="joinus">
-    <h2>How to Join Us</h2>
-    <p>If you are a victim of cyberbullying and you need support, please call us to the +52 6672085494 or text us in the connectwithrespect101@gmail.com
-.</p>
-</section>
-    </body>
+    <footer>
+        <p>&copy; Connect with respect© ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
 </html>
+
