@@ -5,109 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Respect</title>
     <style>
-        /* Este es el estilo general de la página */
         body {
-            font-family: Arial, sans-serif; /* Usa la fuente Arial */
-            background-color: #f4f4f4; /* Color de fondo gris claro */
-            margin: 0; /* Elimina márgenes */
-            padding: 0; /* Elimina relleno */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Estilo para la cabecera */
         header {
-            background-color: #003366; /* Fondo azul */
-            color: white; /* Texto blanco */
-            text-align: center; /* Centra el texto */
-            padding: 20px; /* Espaciado interno */
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            transition: all 0.3s ease;
         }
 
-        /* Estilo para los títulos h1 */
-        h1 {
-            margin: 0; /* Elimina el margen */
-            font-size: 2.5em; /* Tamaño de letra más grande */
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            transition: font-size 0.3s ease, color 0.3s ease;
         }
 
-        /* Estilo para las secciones */
+        nav {
+            background-color: #003366;
+            padding: 10px 0;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+            transform: scale(1.1);
+        }
+
         section {
-            background-color: white; /* Fondo blanco para cada sección */
-            padding: 20px; /* Espaciado interno */
-            margin: 20px; /* Márgenes alrededor de las secciones */
-            border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+            padding: 30px;
+            margin: 20px 10%;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
-        /* Estilo para los subtítulos h2 */
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
         h2 {
-            color: #003366; /* Color azul para los subtítulos */
+            color: #003366;
+            transition: color 0.3s ease;
         }
 
-        /* Estilo para los párrafos */
-        p {
-            font-size: 1.2em; /* Tamaño de letra más grande */
-            color: #555; /* Color gris para el texto */
+        p, ul, table {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #555;
+            transition: color 0.3s ease;
         }
 
-        /* Estilo para el pie de página */
+        .img-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .img-banner:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        tr:hover {
+            background-color: #f4f4f4;
+        }
+
         footer {
-            background-color: #003366; /* Fondo azul */
-            color: white; /* Texto blanco */
-            text-align: center; /* Centra el texto */
-            padding: 10px; /* Espaciado interno */
-            font-size: 1em; /* Tamaño de letra más pequeño */
-            margin-top: 20px; /* Márgenes arriba */
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            margin-top: 50px;
+            transition: all 0.3s ease;
         }
 
-        /* Estilo para el botón */
+        footer:hover {
+            background-color: #004488;
+        }
+
+        .trans-box {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .trans-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .btn {
-            display: inline-block; /* Hace que el botón sea un bloque en línea */
-            padding: 10px 20px; /* Espaciado dentro del botón */
-            background-color: #003366; /* Fondo azul */
-            color: white; /* Texto blanco */
-            text-align: center; /* Centra el texto */
-            text-decoration: none; /* Quita el subrayado */
-            font-size: 1.2em; /* Tamaño de letra más grande */
-            border-radius: 5px; /* Bordes redondeados */
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        /* Estilo para cuando el mouse pasa sobre el botón */
         .btn:hover {
-            background-color: #0055a5; /* Cambia el color del botón */
+            background-color: #0055a5;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-
-    <!-- Cabecera de la página -->
     <header>
         <h1>Connect with Respect</h1>
     </header>
 
-    <!-- Sección "Acerca de nosotros" -->
-    <section>
-        <h2>Acerca de Nosotros</h2>
-        <p>Connect with Respect es una organización que ayuda a las personas que sufren de ciberacoso. Ofrecemos un lugar donde pueden hablar sobre sus experiencias de manera anónima y sin miedo.</p>
+    <nav>
+        <ul>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#cyberbullying">What is Cyberbullying?</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#joinus">How to Join Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="aboutus">
+        <h2>About Us</h2>
+        <img class="img-banner" src="about_us_image.jpg" alt="Connect with Respect">
+        <p>Connect with Respect is an organization dedicated to helping those affected by cyberbullying.</p>
+        <div class="trans-box">
+            <p>We aim to educate and offer resources to fight against digital harassment.</p>
+        </div>
     </section>
 
-    <!-- Sección "¿Qué es el Ciberacoso?" -->
-    <section>
-        <h2>¿Qué es el Ciberacoso?</h2>
-        <p>El ciberacoso es una forma de acoso que ocurre a través de internet, como en redes sociales, mensajes de texto o juegos en línea. Las personas usan la tecnología para molestar, amenazar o avergonzar a otros.</p>
-        <p>Es importante saber que el ciberacoso puede hacer que las personas se sientan tristes, solas, o incluso quieran lastimarse. Todos debemos ayudar a parar el ciberacoso.</p>
+    <section id="cyberbullying">
+        <h2>What is Cyberbullying?</h2>
+        <img class="img-banner" src="cyberbullying_image.jpg" alt="Cyberbullying Concept">
+        <p>Cyberbullying refers to bullying over digital platforms such as social media, texts, and gaming.</p>
+        <div class="trans-box">
+            <p>It can happen to anyone, but it is particularly harmful to young people who may not yet have the tools to cope with online harassment.</p>
+        </div>
     </section>
 
-    <!-- Sección "Cómo unirse a nosotros" -->
-    <section>
-        <h2>Cómo Unirse a Nosotros</h2>
-        <p>Si necesitas ayuda o si eres víctima de ciberacoso, contáctanos:</p>
-        <p><strong>Teléfono:</strong> +52 6672085494</p>
-        <p><strong>Correo Electrónico:</strong> <a href="mailto:connectwithrespect101@gmail.com">connectwithrespect101@gmail.com</a></p>
-        <a href="mailto:connectwithrespect101@gmail.com" class="btn">Unirse Ahora</a>
+    <section id="statistics">
+        <h2>Cyberbullying Statistics</h2>
+        <table>
+            <tr>
+                <th>Age Group</th>
+                <th>Percentage Affected</th>
+                <th>Common Platforms</th>
+            </tr>
+            <tr>
+                <td>13-17</td>
+                <td>25%</td>
+                <td>Social Media</td>
+            </tr>
+            <tr>
+                <td>18-24</td>
+                <td>15%</td>
+                <td>Messaging Apps</td>
+            </tr>
+            <tr>
+                <td>25-34</td>
+                <td>10%</td>
+                <td>Email, Forums</td>
+            </tr>
+        </table>
     </section>
 
-    <!-- Pie de página -->
+    <section id="joinus">
+        <h2>How to Join Us</h2>
+        <img class="img-banner" src=https://www.google.com/imgres?q=join%20us%20imagen&imgurl=https%3A%2F%2Fwww.nicepng.com%2Fpng%2Fdetail%2F61-613327_join-us-join-with-us.png&imgrefurl=https%3A%2F%2Fwww.nicepng.com%2Fourpic%2Fu2q8e6i1e6w7w7y3_join-us-join-with-us%2F&docid=430eCq8_i6LY6M&tbnid=m55ECJvzKwBuZM&vet=12ahUKEwj1yJ2RldqJAxVaHEQIHS0iNb84ChAzegQIHRAA..i&w=820&h=213&hcb=2&ved=2ahUKEwj1yJ2RldqJAxVaHEQIHS0iNb84ChAzegQIHRAA" alt="Join Connect with Respect">
+        <p>Join us in raising awareness and providing support to those affected by cyberbullying.</p>
+        <a href="#join" class="btn">Join Now</a>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Connect with Respect - Todos los derechos reservados</p>
+        <p>&copy; 2024 Connect with Respect - All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
+
+
