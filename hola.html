@@ -1,198 +1,82 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connect with Respect</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    header {
-        background-color: #003366;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        transition: all 0.3s ease;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 3em;
-        text-transform: uppercase;
-        transition: font-size 0.3s ease, color 0.3s ease;
-    }
-    nav {
-        background-color: #003366;
-        padding: 10px 0;
-    }
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2em;
-        transition: color 0.3s ease, transform 0.3s ease;
-    }
-    nav ul li a:hover {
-        color: #f4f4f4;
-        transform: scale(1.1);
-    }
-    section {
-        padding: 30px;
-        margin: 20px 10%;
-        padding: 20px;
-        margin-top: 20px;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-    section:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
-    h2 {
-        color: #003366;
-        transition: color 0.3s ease;
-    }
-    p, ul, table {
-        line-height: 1.6;
-        font-size: 1.1em;
-        color: #555;
-        transition: color 0.3s ease;
-    }
-    .img-banner {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.5s ease, filter 0.5s ease;
-    }
-    .img-banner:hover {
-        transform: scale(1.05);
-        filter: brightness(1.1);
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        transition: all 0.3s ease;
-    }
-    table, th, td {
-        border: 1px solid #ddd;
-        transition: all 0.3s ease;
-    }
-    th, td {
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #003366;
-        color: white;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    tr:hover {
-        background-color: #f4f4f4;
-    }
-    footer {
-        background-color: #003366;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        font-size: 0.9em;
-        margin-top: 50px;
-        transition: all 0.3s ease;
-    }
-    footer:hover {
-        background-color: #004488;
-    }
-    .trans-box {
-        padding: 20px;
-        margin: 10px;
-        border-radius: 8px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s ease;
-    }
-    .trans-box:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #003366;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.2em;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .btn:hover {
-        background-color: #0055a5;
-        transform: scale(1.1);
-    }
-    .input-box {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        transition: all 0.3s ease;
-    }
-    .input-box:focus {
-        border-color: #003366;
-        box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
-    }
-</style>
-</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Respect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            transition: font-size 0.3s ease, color 0.3s ease;
+        }
+        nav {
+            background-color: #003366;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f4f4f4;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 30px;
+            margin: 20px 10%;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #003366;
+            transition: color 0.3s ease;
+        }
+        p, ul, table {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+        .img-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
 
-<body>
-
-    <header>
-        <h1>Connect with Respect</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="joinus">
-        <h2>How to Join Us</h2>
-        <img class="img-banner" src="https://www.nicepng.com/png/detail/61-613327_join-us-join-with-us.png" alt="Join Connect with Respect">
-        <p>Join us in raising awareness and providing support to those affected by cyberbullying.</p>
-        
-        <!-- Text input box -->
-        <div class="trans-box">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" class="input-box" placeholder="Enter your name">
-        </div>
-        <div class="trans-box">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" class="input-box" placeholder="Enter your email">
-        </div>
-
-        <a href="#join" class="btn">Join Now</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Connect with Respect - All Rights Reserved</p>
-    </footer>
-
-</body>
-</html>
