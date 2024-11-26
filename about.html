@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Connect with Respect</title>
     <style>
-   
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            transition: background-color 0.3s ease;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Green color */
             color: white;
             padding: 20px 0;
             text-align: center;
+            transition: background-color 0.3s ease;
         }
 
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        /* Section Styles */
         section {
             padding: 40px;
             margin: 20px auto;
@@ -27,22 +42,28 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        h1 {
-            color: #333;
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
 
         h2 {
-            color: #4CAF50;
+            color: #4CAF50; /* Green color for subheadings */
             text-align: center;
+            transition: color 0.3s ease;
         }
 
         p {
             color: #555;
             line-height: 1.6;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
         }
 
+        /* Footer Styles */
         footer {
             text-align: center;
             background-color: #333;
@@ -51,6 +72,22 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: #444;
+        }
+
+        /* Link hover effect */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #388e3c;
         }
     </style>
 </head>
@@ -69,12 +106,12 @@
 
     <section>
         <h2>About Us</h2>
-        <p>Connect with respect is an organization that helps each and every person who needs psychological help or just moral support, knowing that they are listening to you and supporting you in whatever you need, it is an anonymous organization, you do not have to reveal who you are or who you are. is "harassing" or "bullying you", if you give us your consent we can make known your experience as a victim of cyberbullying (obviously anonymously)..</p>
+        <p>Connect with respect is an organization that helps each and every person who needs psychological help or just moral support, knowing that they are listening to you and supporting you in whatever you need. It is an anonymous organization; you do not have to reveal who you are or who is "harassing" or "bullying" you. If you give us your consent, we can make your experience as a victim of cyberbullying known (obviously anonymously).</p>
     </section>
 
     <section>
         <h2>About Us</h2>
-        <p>This start like a simple project for school, but we know that all, the peoples that suffer cyberbullying, really need our help, so, if you, person that is reading this... needs our help, dont doubt to call us or text us.</p>
+        <p>This started as a simple project for school, but we know that people who suffer from cyberbullying really need our help. So, if you, the person reading this, need our help, don't hesitate to call us or text us.</p>
     </section>
 
     <footer>
